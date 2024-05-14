@@ -1,0 +1,203 @@
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+.root {
+    /*Kolory z PlayStation*/
+    bialy: #FFFFFF;
+    bogatyczarny:#171a21;
+    zielony:#587b7f;
+    pistacja:#88d18a;
+    lavenda:#e9ebf8;
+    yelow:#e09f3e;
+    /*oliwka:#b8c480;*/
+    skyNo:#BAE1FF;
+    skyNo2:#A7CAE5;
+    rusz:#FFC0CBFF;
+}
+*{
+    /*-fx-border-color: darkred;*/
+    -fx-border-width: 3;
+    -fx-background-color: skyNo2;
+    -fx-text-fill: lavenda;
+    -fx-font-size: 20;
+    -fx-font-family: 'VT323', monospace;
+}
+.stack-pane {
+    -fx-alignment: center;
+}
+#ekranHelloMain{
+    -fx-background-color: aqua;
+}
+#menuMain{
+    -fx-background-color: skyNo;
+    -fx-min-width: 600px;
+    -fx-pref-width: 800px;
+    -fx-max-width: 900px;
+    -fx-min-height: 600px;
+    -fx-pref-height: 800px;
+    -fx-max-height: 900px;
+    -fx-alignment: top-center;
+}
+#menuLeftMain{
+    -fx-border-width: 0 3 0 0;
+    -fx-border-color: lavenda;
+    -fx-background-color: skyNo;
+}
+#informacionMain{
+    -fx-background-color: rusz;
+}
+#settingMain{
+    -fx-background-color: rusz;
+}
+#graMain{
+    -fx-background-color: lavenda;
+}
+.label{
+    -fx-border-color: yelow;
+    -fx-border-radius: 3;
+    -fx-background-radius: 10;
+    -fx-alignment: center;
+    -fx-pref-height: 80;
+    -fx-pref-width: 400;
+    -fx-background-color: lavenda;
+    -fx-text-fill: yelow;
+}
+.button{
+    -fx-background-color: pistacja;
+    -fx-pref-width: 140;
+    -fx-pref-height: 70;
+    -fx-padding: 0 10 0 10;
+    -fx-label-padding: 0;
+}
+.button:hover{
+    /*-fx-background-color:derive(pistacja,-20%);*/
+    -fx-background-color: #7abc7c;
+
+}
+.button:pressed{
+    /*-fx-background-color:derive(pistacja,-40%);*/
+    -fx-background-color: #6CA76E;
+}
+#UstawieniaDlaIkon{
+    -fx-border-width: 2;
+    -fx-border-color: yelow;
+    -fx-background-color: lavenda;
+    -fx-min-width: 34;
+    -fx-min-height: 34;
+}
+
+/*====RADIO-BUTTON====*/
+.radio-button {
+    -fx-border-color: lavenda;
+    -fx-border-radius: 3;
+    -fx-background-radius: 5;
+    -fx-background-color: pistacja;
+    -fx-pref-width: 120;
+    -fx-pref-height: 70;
+    -fx-padding: 0;
+    -fx-label-padding: 0;
+}
+.radio-button:hover {
+    /*-fx-background-color: derive(pistacja,-20%);*/
+    -fx-background-color: #7abc7c;
+}
+.radio-button:pressed {
+    /*-fx-background-color: derive(pistacja,-40%);*/
+    -fx-background-color: #6CA76E;
+}
+.radio{
+    -fx-border-radius: 90;
+    -fx-background-color: null;
+}
+.radio-button .dot{
+    -fx-background-color: null;
+    -fx-border-radius: 100%;
+    -fx-background-radius: 100%;
+    -fx-border-color: lavenda;
+    -fx-border-width: 2;
+}
+.radio-button:selected .dot{
+    -fx-background-radius: 110%;
+    -fx-background-color: yelow;
+}
+
+.menuPane{
+    -fx-background-color: null;
+    -fx-min-width: 400;
+    -fx-pref-width: 400;
+    -fx-max-width: 400;
+    -fx-min-height: 80;
+}
+
+
+/*===========================GAME PLAY===============================*/
+
+
+.buttonGame{
+    -fx-border-width: 3;
+    -fx-border-color: bialy;
+    -fx-background-color: null;
+    -fx-min-height: 80;
+    -fx-min-width: 80;
+    -fx-padding: 3;
+}
+.buttonGame:hover{
+    -fx-background-color: derive(#F9EAC2,-5%);
+}
+.buttonGame:pressed{
+    -fx-background-color: derive(#F9EAC2,-15%);
+}
+
+
+/*#GridPaneGraMala{*/
+/*    -fx-padding: 20;*/
+/*    -fx-border-width: 4;*/
+/*    -fx-border-color: orangered;*/
+/*}*/
+#buttonNadPlansza{
+    -fx-padding: 10;
+    -fx-border-width: null;
+    -fx-background-color: skyNo2;
+    -fx-min-width: 250;
+    -fx-min-height: 250;
+}
+#buttonNadPlansza:hover{
+    -fx-opacity: 0.01;
+}
+/*==========LOG--LISTA=============*/
+#listViewLogRozgrywki{
+    -fx-background-color: transparent;
+
+}
+#listViewLogRozgrywki .list-cell{
+    -fx-border-color: wheat;
+    -fx-border-width: 2 0 0 0;
+}
+#listViewLogRozgrywki .list-cell:odd{
+    -fx-background-color: #4f5b66;
+}
+#listViewLogRozgrywki .list-cell:even{
+    -fx-background-color: #3f4851;
+}
+
+.vbox > .list-view {
+    -fx-vgrow: always;
+}
+.scroll-bar:vertical .track{
+    -fx-background-color :transparent;
+    -fx-border-color :transparent;
+    -fx-background-radius : 0.0em;
+    -fx-border-radius :0;
+}
+.scroll-bar:vertical .thumb{
+    -fx-background-color :derive(black,70.0%);
+    -fx-background-insets : 2.0, 0.0, 0.0;
+    -fx-background-radius : 2.0em;
+}
+.scroll-bar:vertical .thumb:hover{
+    -fx-background-color :derive(black,50.0%);
+}
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow{
+    -fx-shape : " ";
+    -fx-padding :0;
+}
